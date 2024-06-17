@@ -65,6 +65,8 @@ app.delete("/users/:id", (req, res) => {
 
 console.log("teste");
 
+throw new Error();
+
 app.listen(port, () => {
   console.log(`Server running at http://localhost:${port}`);
 });
